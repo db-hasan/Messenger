@@ -25,6 +25,7 @@
                 </div>
             </div>
         </div>
+
         <div class="message-pro">
             <div class="card border-0">
                 <div class="d-flex align-items-center justify-content-between">
@@ -49,7 +50,6 @@
 
     <div class="main">
         <aside id="sidebar" class="sidebar scrollbar">
-
             <ul class="sidebar-nav" id="sidebar-nav">
                 <li class="nav-item">
                     <a class="nav-link collapsed user-pro" href="">
@@ -57,7 +57,7 @@
                             alt="Profile" class="rounded-circle">
                         <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
+                                <div class=""><strong>Ali hxxxasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
                             <small class="text-secondary">Message & Call ...</small>
