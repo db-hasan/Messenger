@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeControler;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -15,15 +16,14 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('backend/dashboard');
-});
 
 
-Route::get('/admin-login', [AuthController::class, 'login'])->name('login');
-Route::post('/admin-login', [AuthController::class, 'adminlogin'])->name('admin.login');
+
+Route::get('/', [AuthController::class, 'login'])->name('login');
+Route::post('/', [AuthController::class, 'adminlogin'])->name('admin.login');
 
 Route::group(['middleware'=>'auth'],function(){
+    Route::get('/home',[HomeControler::class,'home'])->name('home');
     Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('profle-update',[AuthController::class,'profileupdate'])->name('profle.update');
