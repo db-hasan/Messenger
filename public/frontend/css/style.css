@@ -71,12 +71,12 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Sidebar
+# Sidebar 
 --------------------------------------------------------------*/
 .sidebar {
   width: 25%;
   height: 83vh;
-  margin-top: 100px;
+  margin-top: 110px !important;
   padding: 20px;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
