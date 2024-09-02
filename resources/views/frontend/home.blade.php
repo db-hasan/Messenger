@@ -1,12 +1,13 @@
 @include('frontend.header')
 
 <body>
-
     <header class="header">
         <div class="search-pro">
             <div class="card border-0">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="m-2 d-flex align-items-center">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile"
+                            class="rounded-circle">
                         <div class="ms-3">
                             <strong>Ali Hasan</strong><br>
                             <small class="text-secondary">Connect With Us</small>
