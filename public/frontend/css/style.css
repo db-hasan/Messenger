@@ -62,16 +62,21 @@ h6 {
 
 .main{
   display: flex;
+  /* height: 10vh; */
 }
 
+.search-bar .form-control{
+  border-radius: 30px !important;
+  background-color: #ebe2e236 !important;
+}
 
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
 .sidebar {
   width: 25%;
-  height: 90vh;
-  margin-top: 60px;
+  height: 83vh;
+  margin-top: 100px;
   padding: 20px;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
@@ -145,6 +150,9 @@ h6 {
   width: 75%;
   margin-top: 60px;
 }
+.messages{
+  height: 70vh;
+}
 .user-pro{
   padding: 5px 10px;
 }
@@ -168,7 +176,7 @@ h6 {
 
 .input-message .form-control{
   border-radius: 30px !important;
-  background-color: #948c8c36 !important;
+  background-color: #fff !important;
 }
 .input-message button{
   border: none;
@@ -182,32 +190,23 @@ h6 {
 
 .contact-messenger-icon i{
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: blue;
 }
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
-  padding: 20px 0;
+
+.credits {
   font-size: 14px;
-  transition: all 0.3s;
-  border-top: 1px solid #cddfff;
-}
-
-.footer .copyright {
-  text-align: center;
-  color: #012970;
-}
-
-.footer .credits {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
   color: #012970;
+  transition: all 0.3s;
+  border-top: 1px solid #cddfff;
 }
-
-
-/*Content scrollbar  start*/
-
-/*Content scrollbar  End*/
+.credits a{
+  padding: 0px !important;
+  margin: 0px !important;
+}
