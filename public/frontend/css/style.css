@@ -62,7 +62,7 @@ h6 {
 
 .main{
   display: flex;
-  /* height: 10vh; */
+  width: 100%;
 }
 
 .search-bar .form-control{
@@ -210,3 +210,31 @@ h6 {
   padding: 0px !important;
   margin: 0px !important;
 }
+
+@media only screen and (max-width: 1200px) {
+  .search-pro{
+    width: 25%;
+    height: 50px;
+  }
+  
+  .message-pro{
+    width: 70%;
+  }
+
+  /* .sidebar{
+    width: 30px;
+  }
+  .main-content{
+    width: 60%;
+  } */
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (max-width: 425px) {}
+
+@media only screen and (max-width: 350px) {}
