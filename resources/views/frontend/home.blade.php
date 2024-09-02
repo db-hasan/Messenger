@@ -54,12 +54,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -67,12 +67,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -80,12 +80,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -93,12 +93,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -106,12 +106,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -119,12 +119,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -132,12 +132,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -145,12 +145,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -158,12 +158,12 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
@@ -171,16 +171,16 @@
                     <a class="nav-link collapsed user-pro" href="">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
-                        <div class="ms-3 w-100">
+                        <div class="ms-2 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class=""><strong>Ali hasan</strong></div>
                                 <div class=""><small class="text-secondary">02/09/2024</small></div>
                             </div>
-                            <small class="text-secondary">Message & Call  ...</small>
+                            <small class="text-secondary">Message & Call ...</small>
                         </div>
                     </a>
                 </li>
-                
+
             </ul>
         </aside>
 
@@ -197,13 +197,13 @@
                             reprehenderit.
                         </div>
                     </div>
-    
+
                     <div class="clearfix">
                         <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
                         </div>
                     </div>
-    
+
                     <div class="clearfix d-flex align-items-center">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
@@ -214,7 +214,7 @@
                             reprehenderit.
                         </div>
                     </div>
-    
+
                     <div class="clearfix">
                         <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
@@ -230,13 +230,13 @@
                             reprehenderit.
                         </div>
                     </div>
-    
+
                     <div class="clearfix">
                         <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
                         </div>
                     </div>
-    
+
                     <div class="clearfix d-flex align-items-center">
                         <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                             alt="Profile" class="rounded-circle">
@@ -247,7 +247,7 @@
                             reprehenderit.
                         </div>
                     </div>
-    
+
                     <div class="clearfix">
                         <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
