@@ -1,16 +1,33 @@
-@extends('frontend/layouts')
-@section('content')
-    <main id="main" class="main frontent-main">
+@include('frontend.header')
 
-        <div class="card text-message">
-            <div class="card">
+<body>
+
+    <header class="header">
+        <div class="search-pro">
+            <div class="card border-0">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="m-2 d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile"
-                        class="rounded-circle">
                         <div class="ms-3">
                             <strong>Ali Hasan</strong><br>
-                            <small class="text-secondary">Message & Call ...</small>
+                            <small class="text-secondary">Connect With Us</small>
+                        </div>
+                    </div>
+                    <div class="contact-messenger-icon">
+                        <i class="bi bi-filter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="message-pro">
+            <div class="card border-0">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="m-2 d-flex align-items-center">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Ali Hasan</strong><br>
+                            <small class="text-secondary">Connect With Us</small>
                         </div>
                     </div>
                     <div class="contact-messenger-icon">
@@ -20,12 +37,166 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <aside id="sidebar" class="sidebar scrollbar">
+
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Ali Hasan</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Ali Hasan</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mim Hasan</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Ali Hasan</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Ali Hasan</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mim Hasan</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed user-pro" href="">
+                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Profile" class="rounded-circle">
+                        <div class="ms-3">
+                            <strong>Mst. Bristy</strong><br>
+                            <small class="text-secondary">Message & Call ...</small>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="main-content">
             <div class="ms-2 mt-5 mb-4">
                 <div class="clearfix d-flex align-items-center">
-                    <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile"
-                        class="rounded-circle">
+                    <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                        alt="Profile" class="rounded-circle">
                     <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore laborum cum
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore
+                        laborum
+                        cum
                         reprehenderit.
                     </div>
                 </div>
@@ -37,10 +208,12 @@
                 </div>
 
                 <div class="clearfix d-flex align-items-center">
-                    <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile"
-                        class="rounded-circle">
+                    <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                        alt="Profile" class="rounded-circle">
                     <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore laborum cum
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore
+                        laborum
+                        cum
                         reprehenderit.
                     </div>
                 </div>
@@ -52,13 +225,26 @@
                 </div>
 
             </div>
-
-            <div class="ms-2 mb-3 search d-flex align-items-center">
+            <div class="ms-2 mb-3 input-message d-flex align-items-center">
                 <textarea class="form-control" id=""></textarea>
                 <button type="submit"><i class="fas fa-paper-plane"></i></button>
             </div>
+
+            <footer id="footer" class="footer">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Me</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://softxone.com/">SOFTxOne Limited</a>
+                </div>
+            </footer>
         </div>
+    </div>
 
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
-    </main>
-@endsection
+    @include('frontend.footer')
+</body>
+
+</html>
