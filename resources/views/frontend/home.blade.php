@@ -1,191 +1,188 @@
 @include('frontend.header')
 
 <body>
-    <header class="header">
-        <div class="search-pro">
-            <div class="card border-0">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="m-2 d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Profile"
-                            class="rounded-circle">
-                        <div class="ms-3">
-                            <strong>Ali Hasan</strong><br>
-                            <small class="text-secondary">Connect With Us</small>
-                        </div>
-                    </div>
-                    <div class="contact-messenger-icon">
-                        <i class="bi bi-filter"></i>
-                    </div>
-                </div>
-                <div class="search-bar m-2">
-                    <form method="POST" action="#">
-                        <input type="text" class="form-control" name="query"
-                            placeholder="Search here start to chat">
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="message-pro">
-            <div class="card border-0">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="m-2 d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-3">
-                            <strong>Ali Hasan</strong><br>
-                            <small class="text-secondary">Connect With Us</small>
-                        </div>
-                    </div>
-                    <div class="contact-messenger-icon">
-                        <i class="bi bi-telephone-fill"></i>
-                        <i class="bi bi-camera-video-fill"></i>
-                        <i class="bi bi-search"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
     <div class="main">
-        <aside id="sidebar" class="sidebar scrollbar">
-            <ul class="sidebar-nav" id="sidebar-nav">
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hxxxasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+        <div class="sidebar-container">
+            <div class="search-pro">
+                <div class="card border-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="m-2 d-flex align-items-center">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-3">
+                                <strong>Ali Hasan</strong><br>
+                                <small class="text-secondary">Connect With Us</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
                         </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        <div class="contact-messenger-icon">
+                            <i class="bi bi-filter"></i>
+                        </div>
+                    </div>
+                    <div class="search-bar m-2">
+                        <form method="POST" action="#">
+                            <input type="text" class="form-control" name="query"
+                                placeholder="Search here start to chat">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <aside id="sidebar" class="sidebar scrollbar">
+                <ul class="sidebar-nav" id="sidebar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hxxxasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link collapsed user-pro" href="">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="ms-2 w-100">
-                            <div class="d-flex justify-content-between">
-                                <div class=""><strong>Ali hasan</strong></div>
-                                <div class=""><small class="text-secondary">02/09/2024</small></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
                             </div>
-                            <small class="text-secondary">Message & Call ...</small>
-                        </div>
-                    </a>
-                </li>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed user-pro" href="">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-2 w-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class=""><strong>Ali hasan</strong></div>
+                                    <div class=""><small class="text-secondary">02/09/2024</small></div>
+                                </div>
+                                <small class="text-secondary">Message & Call ...</small>
+                            </div>
+                        </a>
+                    </li>
 
-            </ul>
-        </aside>
+                </ul>
+            </aside>
+        </div>
 
         <div class="main-content">
+            <div class="message-pro">
+                <div class="card border-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="m-2 d-flex align-items-center">
+                            <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                alt="Profile" class="rounded-circle">
+                            <div class="ms-3">
+                                <strong>Ali Hasan</strong><br>
+                                <small class="text-secondary">Connect With Us</small>
+                            </div>
+                        </div>
+                        <div class="contact-messenger-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                            <i class="bi bi-camera-video-fill"></i>
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="messages scrollbar">
                 <div class="ms-2 mt-5 mb-4">
                     <div class="clearfix d-flex align-items-center">
@@ -256,12 +253,10 @@
                     </div>
                 </div>
             </div>
-
             <div class="ms-2 mb-3 input-message d-flex align-items-center">
                 <textarea class="form-control" id=""></textarea>
                 <button type="submit"><i class="fas fa-paper-plane"></i></button>
             </div>
-
             <div class="credits">
                 Development by <a href="https://softxone.com/">SOFTxOne Limited</a>
             </div>
