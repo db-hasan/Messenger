@@ -24,7 +24,8 @@ Route::post('/', [AuthController::class, 'adminlogin'])->name('admin.login');
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/home',[HomeControler::class,'home'])->name('home');
-    Route::get('/message/{id}',[HomeControler::class,'message'])->name('message');
+    Route::get('/message/{id}',[HomeControler::class,'indexmessage'])->name('index.message');
+    Route::post('/home',[HomeControler::class,'storemessage'])->name('store.message');
     
     Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

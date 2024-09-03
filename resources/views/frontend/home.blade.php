@@ -30,7 +30,7 @@
                 <ul class="sidebar-nav" id="sidebar-nav">
                     @foreach ($users as $user)
                         <li class="nav-item">
-                            <a class="nav-link collapsed user-pro" href="{{ route('message', $user->id) }}">
+                            <a class="nav-link collapsed user-pro" href="{{ route('index.message', $user->id) }}">
                                 <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                                     alt="Profile" class="rounded-circle">
                                 <div class="ms-2 w-100">
@@ -137,10 +137,14 @@
                     </div>
                 </div>
             </div>
-            <div class="ms-2 mb-3 input-message d-flex align-items-center">
-                <textarea class="form-control" id=""></textarea>
-                <button type="submit"><i class="fas fa-paper-plane"></i></button>
-            </div>
+            <form action="{{ route('store.message') }}" method="post">
+                @csrf
+                <div class="ms-2 mb-3 input-message d-flex align-items-center">
+                    <textarea class="form-control" name='message'></textarea>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+
             <div class="credits">
                 Development by <a href="https://softxone.com/">SOFTxOne Limited</a>
             </div>
