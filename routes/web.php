@@ -24,6 +24,8 @@ Route::post('/', [AuthController::class, 'adminlogin'])->name('admin.login');
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/home',[HomeControler::class,'home'])->name('home');
+    Route::get('/message/{id}',[HomeControler::class,'message'])->name('message');
+    
     Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('profle-update',[AuthController::class,'profileupdate'])->name('profle.update');
