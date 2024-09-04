@@ -14,8 +14,15 @@
                                 <small class="text-secondary">Connect With Us</small>
                             </div>
                         </div>
-                        <div class="contact-messenger-icon">
-                            <i class="bi bi-filter"></i>
+                        <div class="contact-messenger-icon dropdown">
+                            <button class="border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Profile Setting</a></li>
+                                <li style="border: 1px dashed #0000001f;"><a class="dropdown-item" href="{{route('profle.update')}}"><i class="bi bi-door-open"></i>Profile Update</a></a></li>
+                                <li><a class="dropdown-item" href="{{route('logout')}}"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+                              </ul>
                         </div>
                     </div>
                     <div class="search-bar m-2 mx-3">
@@ -72,74 +79,28 @@
             </div>
             <div class="messages scrollbar">
                 <div class="ms-2 mt-5 mb-4">
-                    <div class="clearfix d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore
-                            laborum
-                            cum
-                            reprehenderit.
-                        </div>
-                    </div>
-
-                    <div class="clearfix">
-                        <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
-                        </div>
-                    </div>
-
-                    <div class="clearfix d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore
-                            laborum
-                            cum
-                            reprehenderit.
-                        </div>
-                    </div>
-
-                    <div class="clearfix">
-                        <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
-                        </div>
-                    </div>
-                    <div class="clearfix d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore
-                            laborum
-                            cum
-                            reprehenderit.
-                        </div>
-                    </div>
-
-                    <div class="clearfix">
-                        <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
-                        </div>
-                    </div>
-
-                    <div class="clearfix d-flex align-items-center">
-                        <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Profile" class="rounded-circle">
-                        <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum magni inventore
-                            laborum
-                            cum
-                            reprehenderit.
-                        </div>
-                    </div>
-
-                    <div class="clearfix">
-                        <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates.
-                        </div>
-                    </div>
+                    @foreach($messages as $message)
+                        @if($message->sender_id == auth()->user()->id)
+                            <!-- Message from the authenticated user (sent message) -->
+                            <div class="clearfix">
+                                <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
+                                    {{ $message->message }}
+                                </div>
+                            </div>
+                        @else
+                            <!-- Message from the other user (received message) -->
+                            <div class="clearfix d-flex align-items-center">
+                                <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                    alt="Profile" class="rounded-circle">
+                                <div class="bg-body-secondary float-start mx-3 my-2 p-2 rounded message-content">
+                                    {{ $message->message }}
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
+            
             <form action="{{ route('store.message') }}" method="post">
                 @csrf
                 <input type="hidden" name="receiver_id" value="{{ $userid->id }}">

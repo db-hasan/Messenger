@@ -22,10 +22,20 @@ class HomeControler extends Controller
 
     public function indexmessage($id) {
         $userid = User::find($id);
+        $authid = auth()->user()->id;
         $users = User::where('id', '!=', auth()->user()->id)->get();
-        return view('frontend.message', compact('userid', 'users'));
+    
+        $messages = Message::where(function($query) use ($authid, $userid) {
+            $query->where('sender_id', $authid)
+                  ->where('receiver_id', $userid->id);
+        })->orWhere(function($query) use ($authid, $userid) {
+            $query->where('sender_id', $userid->id)
+                  ->where('receiver_id', $authid);
+        })->with('sender:id,name', 'receiver:id,name')->get();
+        
+        return view('frontend.message', compact('userid', 'users', 'messages'));
     }
-
+    
 
     public function storemessage(Request $request):RedirectResponse
     {   
