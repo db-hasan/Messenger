@@ -146,14 +146,12 @@ h6 {
 .pages-content {
     width: 75%;
     left: 25%;
-    margin-top: 60px;
     font-size: 14px;
 }
 
 .main-content {
     width: 75%;
     left: 25%;
-    margin-top: 60px;
     font-size: 14px;
 }
 
@@ -174,6 +172,7 @@ h6 {
 }
 .messages {
     height: 70vh;
+    margin-top: 40px;
 }
 .user-pro {
     padding: 5px 5px !important;

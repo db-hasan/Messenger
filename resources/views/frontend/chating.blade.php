@@ -49,6 +49,7 @@
 
         <div class="main-content">
 
+            
             <div class="credits">
                 Development by <a href="https://softxone.com/">SOFTxOne Limited</a>
             </div>
