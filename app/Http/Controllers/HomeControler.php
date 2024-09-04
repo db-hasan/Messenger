@@ -14,9 +14,7 @@ use Exception;
 use Session;
 
 class HomeControler extends Controller
-{
-    // public $receiver_id;
-    
+{    
     public function indexchat() {
         $users=User::where('id', '!=', auth()->user()->id)->get();
         return view('frontend.chating', compact('users'));
@@ -28,18 +26,14 @@ class HomeControler extends Controller
         return view('frontend.message', compact('userid', 'users'));
     }
 
-    // $this->receiver_id = $id;
 
     public function storemessage(Request $request):RedirectResponse
     {   
-    $receiver_id = session('receiver_id');
-
         $data = new Message();
         $data->sender_id = auth()->user()->id;
-        $data->receiver_id = $receiver_id;
+        $data->receiver_id = $request->receiver_id;
         $data->message = $request->message;
-        dd($data);
-        // $data->save();
+        $data->save();
         return redirect()->back();
     }
 

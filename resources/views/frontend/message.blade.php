@@ -142,6 +142,7 @@
             </div>
             <form action="{{ route('store.message') }}" method="post">
                 @csrf
+                <input type="hidden" name="receiver_id" value="{{ $userid->id }}">
                 <div class="ms-2 mb-3 input-message d-flex align-items-center">
                     <textarea class="form-control" name='message'></textarea>
                     <button type="submit"><i class="fas fa-paper-plane"></i></button>

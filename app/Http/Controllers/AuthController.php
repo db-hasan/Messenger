@@ -31,7 +31,7 @@ class AuthController extends Controller
         ];
 
         if(Auth::attempt($credentials)) {
-            return redirect()->route('home');
+            return redirect()->route('index.chat');
         } else {
             return redirect()->route('login')->with('error', 'Invalid credentials. Please try again.');
         }
@@ -46,7 +46,8 @@ class AuthController extends Controller
 
     // Display the Password Update
     public function profileupdate() {
-        $users=User::find(1);
+        $userId = auth()->id(); // Get the authenticated user's ID
+        $users = User::find($userId); // Find the user by their ID
         return view('auth.password', compact('users'));
     }
 
