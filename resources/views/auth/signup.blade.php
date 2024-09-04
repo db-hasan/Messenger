@@ -16,10 +16,9 @@
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="pt-4 pb-2">
-                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p class="text-center small">Enter your username & password to login</p>
+                                        <h5 class="card-title text-center pb-0 fs-4">Create Your Account</h5>
                                     </div>
-                                    <form method="POST" action="{{ route('user.login') }}" class="row g-3">
+                                    <form method="POST" action="{{ route('user.signup') }}" class="row g-3">
                                         @csrf
                                         @method('POST')
                                         @if (Session::has('success'))
@@ -33,6 +32,14 @@
                                             </div>
                                         @endif
                                         <div class="col-md-12">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                required>
+                                            @error('name')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                        <div class="col-md-12">
                                             <label for="email" class="form-label">Email</label>
                                             <input type="email" class="form-control" id="email" name="email"
                                                 required>
@@ -40,6 +47,7 @@
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>
+                                        
                                         <div class="col-md-12">
                                             <label for="password" class="form-label">Password</label>
                                             <input type="password" class="form-control" id="password" name="password"
@@ -48,10 +56,18 @@
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>
+                                        <div class="col-md-12">
+                                            <label for="password_confirmation" class="form-label">Confirmation</label>
+                                            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation"
+                                                required>
+                                            @error('password_confirmation')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
                                         <div class="col-12">
                                             <div class="">
-                                                <label class="form-check-label" for="">You not Account ?</label>
-                                                <a href="{{route('signup')}}">Signup Now</a>
+                                                <label class="form-check-label" for="">Are you have Account ?</label>
+                                                <a href="{{route('login')}}">Signin Now</a>
                                             </div>
                                         </div>
                                         <div class="col-12 pb-4">

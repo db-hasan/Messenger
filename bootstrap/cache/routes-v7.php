@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::F1Pp7COgno5GW12v',
+            '_route' => 'generated::ekrGRgYBTpBIgB69',
           ),
           1 => NULL,
           2 => 
@@ -139,7 +139,43 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'admin.login',
+            '_route' => 'user.login',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/signup' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'signup',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'user.signup',
           ),
           1 => NULL,
           2 => 
@@ -458,7 +494,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::F1Pp7COgno5GW12v' => 
+    'generated::ekrGRgYBTpBIgB69' => 
     array (
       'methods' => 
       array (
@@ -481,7 +517,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::F1Pp7COgno5GW12v',
+        'as' => 'generated::ekrGRgYBTpBIgB69',
       ),
       'fallback' => false,
       'defaults' => 
@@ -534,7 +570,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'admin.login' => 
+    'user.login' => 
     array (
       'methods' => 
       array (
@@ -547,14 +583,87 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\AuthController@adminlogin',
-        'controller' => 'App\\Http\\Controllers\\AuthController@adminlogin',
+        'uses' => 'App\\Http\\Controllers\\AuthController@userlogin',
+        'controller' => 'App\\Http\\Controllers\\AuthController@userlogin',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'admin.login',
+        'as' => 'user.login',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'signup' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'signup',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AuthController@signup',
+        'controller' => 'App\\Http\\Controllers\\AuthController@signup',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'signup',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'user.signup' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'signup',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\AuthController@usersignup',
+        'controller' => 'App\\Http\\Controllers\\AuthController@usersignup',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'user.signup',
       ),
       'fallback' => false,
       'defaults' => 

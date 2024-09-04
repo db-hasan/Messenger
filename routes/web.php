@@ -20,7 +20,9 @@ use App\Http\Controllers\DashboardController;
 
 
 Route::get('/', [AuthController::class, 'login'])->name('login');
-Route::post('/', [AuthController::class, 'adminlogin'])->name('admin.login');
+Route::post('/', [AuthController::class, 'userlogin'])->name('user.login');
+Route::get('/signup', [AuthController::class, 'signup'])->name('signup');
+Route::post('/signup', [AuthController::class, 'usersignup'])->name('user.signup');
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/chating',[HomeControler::class,'indexchat'])->name('index.chat');

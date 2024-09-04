@@ -14,12 +14,33 @@ use Session;
 
 class AuthController extends Controller
 {
+    public function signup() {
+        return view('auth.signup');
+    }
+
+    public function usersignup(Request $request) {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email', // Ensure the email is unique
+            'password' => 'required|confirmed',
+        ]);
+    
+        $data = new User();
+        $data->name = $request->name;
+        $data->email = $request->email;
+        $data->password = Hash::make($request->password); // Hash the password correctly
+        $data->save();
+        
+        return redirect()->route('index.chat')->with('success', 'User registered successfully.');
+    }
+    
+
     // Display the login form
     public function login() {
         return view('auth.login');
     }
     
-    public function adminlogin(Request $request) {
+    public function userlogin(Request $request) {
         $request->validate([
             'email' => 'required|email',
             'password' => 'required',
