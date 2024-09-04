@@ -1,9 +1,9 @@
 @include('frontend.header')
 
 <body>
-    <div class="main">
-        <div class="sidebar-container disply-block">
-            <div class="search-pro disply-block">
+    <div class="header">
+        <div class="pages-sidebar-container">
+            <div class="pages-search-pro">
                 <div class="card border-0">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="m-2 d-flex align-items-center">
@@ -47,15 +47,15 @@
             </aside>
         </div>
 
-        <div class="main-content disply-none">
-            <div class="message-pro disply-none">
+        <div class="pages-content">
+            <div class="pages-message-pro">
                 <div class="card border-0">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="m-2 d-flex align-items-center">
                             <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                                 alt="Profile" class="rounded-circle">
                             <div class="ms-3">
-                                <strong>{{ $userId->name }}</strong><br>
+                                <strong>{{ $userid->name }}</strong><br>
                                 <small class="text-secondary">Connect With Us</small>
                             </div>
                         </div>

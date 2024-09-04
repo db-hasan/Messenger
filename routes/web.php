@@ -23,7 +23,7 @@ Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::post('/', [AuthController::class, 'adminlogin'])->name('admin.login');
 
 Route::group(['middleware'=>'auth'],function(){
-    Route::get('/home',[HomeControler::class,'home'])->name('home');
+    Route::get('/chating',[HomeControler::class,'indexchat'])->name('index.chat');
     Route::get('/message/{id}',[HomeControler::class,'indexmessage'])->name('index.message');
     Route::post('/home',[HomeControler::class,'storemessage'])->name('store.message');
     

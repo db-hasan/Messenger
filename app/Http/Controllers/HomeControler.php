@@ -17,18 +17,18 @@ class HomeControler extends Controller
 {
     // public $receiver_id;
     
-    public function home() {
+    public function indexchat() {
         $users=User::where('id', '!=', auth()->user()->id)->get();
-        return view('frontend/home', compact('users'));
+        return view('frontend.chating', compact('users'));
     }
 
     public function indexmessage($id) {
-        $userId = User::find($id);
-        // $this->receiver_id = $id;
-
+        $userid = User::find($id);
         $users = User::where('id', '!=', auth()->user()->id)->get();
-        return view('frontend/home', compact('userId', 'users'));
+        return view('frontend.message', compact('userid', 'users'));
     }
+
+    // $this->receiver_id = $id;
 
     public function storemessage(Request $request):RedirectResponse
     {   
