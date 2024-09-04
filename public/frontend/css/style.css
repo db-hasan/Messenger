@@ -163,6 +163,15 @@ h6 {
     top: 0;
     z-index: 1000;
 }
+
+.back-button{
+    padding: 0px 20px;
+    display: none;
+}
+
+.back-button i{
+    font-size: 30px;
+}
 .messages {
     height: 70vh;
 }
@@ -338,6 +347,10 @@ h6 {
 
     .main-content {
         display: none;
+    }
+
+    .back-button{
+        display: block;
     }
 }
 

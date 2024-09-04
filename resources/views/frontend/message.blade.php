@@ -52,6 +52,9 @@
                 <div class="card border-0">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="m-2 d-flex align-items-center">
+                            <div class="back-button">
+                                <a href="{{ route('index.chat')}}"><i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
                             <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                                 alt="Profile" class="rounded-circle">
                             <div class="ms-3">
