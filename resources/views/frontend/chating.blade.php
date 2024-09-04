@@ -3,7 +3,7 @@
 <body>
     <div class="header">
         <div class="main-sidebar-container">
-            <div class="main-search-pro disply-block">
+            <div class="main-search-pro">
                 <div class="card border-0">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="m-2 d-flex align-items-center">
@@ -14,10 +14,19 @@
                                 <small class="text-secondary">Connect With Us</small>
                             </div>
                         </div>
-                        <div class="contact-messenger-icon">
-                            <i class="bi bi-filter"></i>
+                        <div class="contact-messenger-icon dropdown">
+                            <button class="border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Profile Setting</a></li>
+                                <li style="border: 1px dashed #0000001f;"><a class="dropdown-item" href="{{route('profle.update')}}"><i class="bi bi-door-open"></i>Profile Update</a></a></li>
+                                <li><a class="dropdown-item" href="{{route('logout')}}"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+                              </ul>
                         </div>
+                            
                     </div>
+
                     <div class="search-bar m-2 mx-3">
                         <form method="POST" action="#">
                             <input type="text" class="form-control" name="query"
@@ -53,12 +62,12 @@
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="m-2 d-flex align-items-center">
                             <div class="ms-3">
-                                <strong>Test</strong><br>
+                                <strong>ChatApp</strong><br>
                                 <small class="text-secondary">Connect With Us</small>
                             </div>
                         </div>
                         <div class="contact-messenger-icon pe-3">
-                            <i class="bi bi-person-gear"></i>
+                            
                         </div>
                     </div>
                 </div>
