@@ -48,7 +48,21 @@
         </div>
 
         <div class="main-content">
-
+            <div class="main-header">
+                <div class="card border-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="m-2 d-flex align-items-center">
+                            <div class="ms-3">
+                                <strong>Test</strong><br>
+                                <small class="text-secondary">Connect With Us</small>
+                            </div>
+                        </div>
+                        <div class="contact-messenger-icon pe-3">
+                            <i class="bi bi-person-gear"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <div class="credits">
                 Development by <a href="https://softxone.com/">SOFTxOne Limited</a>

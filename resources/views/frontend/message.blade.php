@@ -147,10 +147,6 @@
                     <button type="submit"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
-
-            <div class="credits">
-                Development by <a href="https://softxone.com/">SOFTxOne Limited</a>
-            </div>
         </div>
     </div>
 
