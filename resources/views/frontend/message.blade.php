@@ -19,10 +19,14 @@
                                 <i class="bi bi-person-gear"></i>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Profile Setting</a></li>
-                                <li style="border: 1px dashed #0000001f;"><a class="dropdown-item" href="{{route('profle.update')}}"><i class="bi bi-door-open"></i>Profile Update</a></a></li>
-                                <li><a class="dropdown-item" href="{{route('logout')}}"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
-                              </ul>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Profile
+                                        Setting</a></li>
+                                <li style="border: 1px dashed #0000001f;"><a class="dropdown-item"
+                                        href="{{ route('profle.update') }}"><i class="bi bi-door-open"></i>Profile
+                                        Update</a></a></li>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}"><i
+                                            class="bi bi-box-arrow-right"></i>Logout</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="search-bar m-2 mx-3">
@@ -60,7 +64,7 @@
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="m-2 d-flex align-items-center">
                             <div class="back-button">
-                                <a href="{{ route('index.chat')}}"><i class="fa-solid fa-arrow-left"></i></a>
+                                <a href="{{ route('index.chat') }}"><i class="fa-solid fa-arrow-left"></i></a>
                             </div>
                             <img class="user-pro-image" src="https://bootdey.com/img/Content/avatar/avatar7.png"
                                 alt="Profile" class="rounded-circle">
@@ -79,8 +83,8 @@
             </div>
             <div class="messages scrollbar">
                 <div class="ms-2 mt-5 mb-4">
-                    @foreach($messages as $message)
-                        @if($message->sender_id == auth()->user()->id)
+                    @foreach ($messages as $message)
+                        @if ($message->sender_id == auth()->user()->id)
                             <!-- Message from the authenticated user (sent message) -->
                             <div class="clearfix">
                                 <div class="bg-primary text-white float-end mx-3 my-2 p-2 rounded message-content">
@@ -100,12 +104,12 @@
                     @endforeach
                 </div>
             </div>
-            
+
             <form action="{{ route('store.message') }}" method="post">
                 @csrf
                 <input type="hidden" name="receiver_id" value="{{ $userid->id }}">
                 <div class="ms-2 mb-3 input-message d-flex align-items-center">
-                    <textarea class="form-control" name='message'></textarea>
+                    <textarea class="form-control" name='message' required></textarea>
                     <button type="submit"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
